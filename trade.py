@@ -12,8 +12,8 @@ import time
 
 # Configure the exchange (Binance as example)
 exchange = ccxt.binance({
-    'apiKey': 'YOUR_API_KEY',
-    'secret': 'YOUR_SECRET',
+    'apiKey': 'abrakadabraka',
+    'secret': 'phonenahellohello',
     'enableRateLimit': True,
 })
 
