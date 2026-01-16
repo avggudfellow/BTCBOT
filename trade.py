@@ -1,6 +1,4 @@
 
-# It provides a simple UI to check price, buy, sell, and view balance.
-
 import ccxt
 import tkinter as tk
 from tkinter import messagebox
