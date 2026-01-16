@@ -58,7 +58,7 @@ def auto_trade():
         btc_balance = get_balance('BTC')
         usdt_balance = get_balance('USDT')
         
-        # Example strategy: Buy if price < 50000 and have USDT, Sell if price > 60000 and have BTC
+       
         if price < 50000 and usdt_balance > 100:
             buy_amount = 100 / price  # Buy $100 worth
             buy(buy_amount)
