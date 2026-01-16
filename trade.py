@@ -65,7 +65,7 @@ def auto_trade():
         elif price > 60000 and btc_balance > 0.001:
             sell(0.001)  
         
-        time.sleep(60)  # Check every minute
+        time.sleep(60)  
 
 # UI Setup
 root = tk.Tk()
