@@ -4,14 +4,12 @@ import tkinter as tk
 from tkinter import messagebox
 import time
 
-# Configure the exchange (Binance as example)
 exchange = ccxt.binance({
     'apiKey': 'abrakadabraka',
     'secret': 'phonenahellohello',
     'enableRateLimit': True,
 })
 
-# Trading pair
 symbol = 'BTC/USDT'
 
 # Function to get current price
