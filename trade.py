@@ -28,7 +28,6 @@ def get_balance(asset):
         messagebox.showerror("Error", f"Failed to fetch balance: {str(e)}")
         return 0
 
-# Function to place buy order
 def buy(amount):
     try:
         price = get_price()
