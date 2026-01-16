@@ -60,7 +60,7 @@ def auto_trade():
         
        
         if price < 50000 and usdt_balance > 100:
-            buy_amount = 100 / price  # Buy $100 worth
+            buy_amount = 100 / price  
             buy(buy_amount)
         elif price > 60000 and btc_balance > 0.001:
             sell(0.001)  # Sell 0.001 BTC
