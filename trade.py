@@ -63,7 +63,7 @@ def auto_trade():
             buy_amount = 100 / price  
             buy(buy_amount)
         elif price > 60000 and btc_balance > 0.001:
-            sell(0.001)  # Sell 0.001 BTC
+            sell(0.001)  
         
         time.sleep(60)  # Check every minute
 
