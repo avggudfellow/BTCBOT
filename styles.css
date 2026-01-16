@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  background: #0d001a;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  overflow: hidden;
+  background-image: 
+    radial-gradient(circle at 20% 30%, #2a004a 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, #4a002f 0%, transparent 45%);
+}
+
+.scene {
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.glitch {
+  font-size: clamp(3.5rem, 12vw, 11rem);
+  font-weight: 900;
+  color: #f0f;
+  text-shadow: 
+    -4px 0 #0ff,
+     4px 0 #f0f,
+    -8px 0 #0ff;
+  animation: glitch 2.5s infinite alternate;
+  position: relative;
+  user-select: none;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.glitch::before {
+  left: 3px;
+  text-shadow: -2px 0 #f0f;
+  clip: rect(0, 900px, 0, 0);
+  animation: glitch-anim 3s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -3px;
+  text-shadow: 2px 0 #0ff;
+  clip: rect(0, 900px, 0, 0);
+  animation: glitch-anim2 2.8s infinite linear alternate-reverse;
+}
+
+.orb-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.orb {
+  position: absolute;
+  width: 300px;
+  aspect-ratio: 1;
+  background: radial-gradient(circle at 30% 30%, #ff00aa, #5500ff, transparent 60%);
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+  animation: float 18s infinite ease-in-out;
+}
+
+.orb:nth-child(2) { animation-delay: -4s; left: 60%; }
+.orb:nth-child(3) { animation-delay: -9s; top: 55%; }
+
+button#chaos {
+  position: absolute;
+  bottom: 15vh;
+  padding: 1rem 2.8rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #ff0066, #6600ff);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s;
+  box-shadow: 0 0 30px #ff00aa88;
+}
+
+button#chaos:hover {
+  transform: scale(1.15) rotate(3deg);
+  box-shadow: 0 0 60px #ff00ffcc;
+}
+
+/* ─── Animations ─── */
+@keyframes glitch {
+  0%,100%   { transform: translate(0); }
+  20%       { transform: translate(-4px, 2px); }
+  40%       { transform: translate(4px, -2px); }
+  60%       { transform: translate(-2px, 2px); }
+  80%       { transform: translate(2px, -1px); }
+}
+
+@keyframes glitch-anim {
+  0%    { clip: rect(42px, 9999px, 44px, 0); }
+  5%    { clip: rect(17px, 9999px, 93px, 0); }
+  /* ... you get the idea, many more random values usually exist ... */
+  100%  { clip: rect(68px, 9999px, 37px, 0); }
+}
+
+@keyframes float {
+  0%,100%   { transform: translate(0, 0) rotate(0deg) scale(1); }
+  25%       { transform: translate(120px, -80px) rotate(20deg) scale(1.1); }
+  50%       { transform: translate(-90px, 140px) rotate(-15deg) scale(0.9); }
+  75%       { transform: translate(60px, -100px) rotate(10deg) scale(1.05); }
+}
