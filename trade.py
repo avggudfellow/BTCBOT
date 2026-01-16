@@ -107,11 +107,7 @@ buy_button.pack()
 sell_button = tk.Button(root, text="Sell BTC", command=lambda: sell(float(amount_entry.get())))
 sell_button.pack()
 
-# Start auto trading in background (comment out if not needed)
-# import threading
-# threading.Thread(target=auto_trade, daemon=True).start()
 
-# Initial update
 update_labels()
 
 root.mainloop()
