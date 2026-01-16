@@ -12,7 +12,6 @@ exchange = ccxt.binance({
 
 symbol = 'BTC/USDT'
 
-# Function to get current price
 def get_price():
     try:
         ticker = exchange.fetch_ticker(symbol)
