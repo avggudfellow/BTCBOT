@@ -98,7 +98,7 @@ update_button.pack()
 
 amount_entry = tk.Entry(root)
 amount_entry.pack()
-amount_entry.insert(0, "0.001")  # Default amount
+amount_entry.insert(0, "0.001")  
 
 buy_button = tk.Button(root, text="Buy BTC", command=lambda: buy(float(amount_entry.get())))
 buy_button.pack()
