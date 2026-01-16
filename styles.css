@@ -99,7 +99,6 @@ button#chaos:hover {
   box-shadow: 0 0 60px #ff00ffcc;
 }
 
-/* ─── Animations ─── */
 @keyframes glitch {
   0%,100%   { transform: translate(0); }
   20%       { transform: translate(-4px, 2px); }
