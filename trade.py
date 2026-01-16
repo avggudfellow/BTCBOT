@@ -67,7 +67,6 @@ def auto_trade():
         
         time.sleep(60)  
 
-# UI Setup
 root = tk.Tk()
 root.title("Bitcoin Trading Bot")
 
