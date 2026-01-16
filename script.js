@@ -1,7 +1,6 @@
 const button = document.getElementById('chaos');
 
 button.addEventListener('click', () => {
-  // Random chaos level
   const hue = Math.random() * 360;
   document.body.style.background = `hsl(${hue}, 80%, 8%)`;
   
@@ -12,7 +11,6 @@ button.addEventListener('click', () => {
       transparent 65%)`;
   });
 
-  // Shake everything for 0.6s
   document.querySelector('.scene').classList.add('shake');
   setTimeout(() => {
     document.querySelector('.scene').classList.remove('shake');
