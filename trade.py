@@ -70,7 +70,6 @@ def auto_trade():
 root = tk.Tk()
 root.title("Bitcoin Trading Bot")
 
-# Labels
 price_label = tk.Label(root, text="Current Price: Loading...")
 price_label.pack()
 
