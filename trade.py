@@ -79,7 +79,6 @@ btc_balance_label.pack()
 usdt_balance_label = tk.Label(root, text="USDT Balance: Loading...")
 usdt_balance_label.pack()
 
-# Update function for labels
 def update_labels():
     price = get_price()
     if price:
