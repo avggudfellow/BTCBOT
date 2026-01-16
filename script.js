@@ -16,8 +16,6 @@ button.addEventListener('click', () => {
     document.querySelector('.scene').classList.remove('shake');
   }, 600);
 });
-
-// Bonus: tiny shake animation class
 const style = document.createElement('style');
 style.textContent = `
   @keyframes shake {
