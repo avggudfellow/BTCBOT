@@ -2,7 +2,6 @@
 # Disclaimer: This is a basic example for educational purposes only. Trading involves risks, and you should use test accounts or paper trading.
 # You need to install required libraries: pip install ccxt tkinter
 # Replace 'YOUR_API_KEY' and 'YOUR_SECRET' with your actual exchange API credentials (e.g., from Binance).
-# This bot uses CCXT library to interact with Binance exchange for BTC/USDT pair.
 # It provides a simple UI to check price, buy, sell, and view balance.
 
 import ccxt
