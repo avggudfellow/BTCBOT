@@ -110,7 +110,6 @@ button#chaos:hover {
 @keyframes glitch-anim {
   0%    { clip: rect(42px, 9999px, 44px, 0); }
   5%    { clip: rect(17px, 9999px, 93px, 0); }
-  /* ... you get the idea, many more random values usually exist ... */
   100%  { clip: rect(68px, 9999px, 37px, 0); }
 }
 
