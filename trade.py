@@ -20,7 +20,6 @@ def get_price():
         messagebox.showerror("Error", f"Failed to fetch price: {str(e)}")
         return None
 
-# Function to get balance
 def get_balance(asset):
     try:
         balance = exchange.fetch_balance()
