@@ -48,7 +48,6 @@ def sell(amount):
     except Exception as e:
         messagebox.showerror("Error", f"Sell failed: {str(e)}")
 
-# Simple automated trading logic (example: buy low, sell high - adjust thresholds as needed)
 def auto_trade():
     while True:
         price = get_price()
