@@ -1,5 +1,4 @@
 
-# Replace 'YOUR_API_KEY' and 'YOUR_SECRET' with your actual exchange API credentials (e.g., from Binance).
 # It provides a simple UI to check price, buy, sell, and view balance.
 
 import ccxt
