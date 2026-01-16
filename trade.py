@@ -93,7 +93,7 @@ def update_labels():
     
     root.after(10000, update_labels)  
 
-# Buttons
+
 update_button = tk.Button(root, text="Update Balances", command=update_labels)
 update_button.pack()
 
