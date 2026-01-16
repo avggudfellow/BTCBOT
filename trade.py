@@ -38,7 +38,6 @@ def buy(amount):
     except Exception as e:
         messagebox.showerror("Error", f"Buy failed: {str(e)}")
 
-# Function to place sell order
 def sell(amount):
     try:
         price = get_price()
